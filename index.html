@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <p>Count your BMI !</p>
-    <form>
+    <form class="js-form">
       <fieldset>
         <legend>Your details</legend>
         <p>
           <label>
-            Your height: <input class="js-height" type="number" min="1" step="any" />
+            Your height:
+            <input class="js-height" type="number" min="1" step="any" />
           </label>
         </p>
         <p>
           <label>
-            Your weight: <input type="number" min="1" step="any" />
+            Your weight:
+            <input class="js-weight" type="number" min="1" step="any" />
           </label>
         </p>
       </fieldset>
@@ -25,6 +28,6 @@
         <button>Calculate!</button>
       </p>
     </form>
-    <p>Your BMI is: <strong></strong></p>
+    <p>Your BMI is: <strong class="js-bmi"></strong></p>
   </body>
 </html>
